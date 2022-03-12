@@ -51,7 +51,7 @@ class RoomProvider extends Component {
 
     getRoom = (slug) => {
         let tempRooms = [...this.state.rooms];
-        const room = tempRooms.find(room => room.slug == slug);
+        const room = tempRooms.find(room => room.slug === slug);
 
         return room;
     }
@@ -72,8 +72,6 @@ class RoomProvider extends Component {
             type,
             capacity,
             price,
-            minPrice,
-            maxPrice,
             minSize,
             maxSize,
             breakfast,
